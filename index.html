@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#11101a">
+<title>For Aanya ♡</title>
+<style>
+*{box-sizing:border-box} html,body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#11101a;color:#fff}
+body{overflow-x:hidden}
+.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;position:relative;overflow:hidden;background:
+radial-gradient(circle at 20% 20%,rgba(255,151,205,.16),transparent 30%),
+radial-gradient(circle at 80% 25%,rgba(90,170,255,.14),transparent 28%),
+linear-gradient(145deg,#100f18,#191522 55%,#101722)}
+.stars,.stars:before,.stars:after{position:absolute;inset:0;content:"";pointer-events:none;background-image:radial-gradient(circle,rgba(255,255,255,.7) 0 1px,transparent 1.5px);background-size:83px 91px;opacity:.22;animation:drift 12s linear infinite}
+.stars:before{background-size:127px 119px;opacity:.15;animation-duration:18s} .stars:after{background-size:53px 67px;opacity:.12;animation-duration:25s}
+@keyframes drift{to{transform:translateY(25px)}}
+.shell{width:min(430px,100%);text-align:center;position:relative;z-index:2}
+h1{font-size:clamp(30px,8vw,46px);margin:0 0 8px;letter-spacing:.04em;font-weight:700}
+.sub{opacity:.78;font-size:15px;letter-spacing:.04em;margin-bottom:28px}
+.card{background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.14);box-shadow:0 25px 80px rgba(0,0,0,.35),0 0 55px rgba(255,153,207,.09);border-radius:28px;padding:28px 22px;backdrop-filter:blur(18px)}
+.count{font-variant-numeric:tabular-nums;font-size:38px;font-weight:700;letter-spacing:.08em;margin:10px 0 8px}
+.locktext{font-size:14px;opacity:.72}
+.gift-wrap{height:220px;display:flex;align-items:center;justify-content:center;position:relative;margin-bottom:8px}
+.gift{position:relative;width:150px;height:130px;animation:float 3s ease-in-out infinite;filter:drop-shadow(0 16px 22px rgba(0,0,0,.35))}
+@keyframes float{50%{transform:translateY(-7px)}}
+.box{position:absolute;bottom:0;left:8px;width:134px;height:88px;border-radius:8px 8px 18px 18px;background:linear-gradient(135deg,#f58ab8,#d965a0);border:2px solid rgba(255,255,255,.2)}
+.lid{position:absolute;top:29px;left:0;width:150px;height:35px;border-radius:8px;background:linear-gradient(135deg,#ff9fc8,#e070a9);border:2px solid rgba(255,255,255,.25);z-index:3}
+.ribbon-v{position:absolute;left:63px;top:27px;width:25px;height:102px;background:linear-gradient(90deg,#69aefc,#9dcaff);z-index:4;opacity:.95}
+.ribbon-h{position:absolute;left:9px;top:60px;width:132px;height:17px;background:linear-gradient(90deg,#69aefc,#9dcaff);z-index:4;opacity:.95}
+.bow{position:absolute;top:7px;left:48px;width:55px;height:38px;z-index:5}
+.bow:before,.bow:after{content:"";position:absolute;width:34px;height:25px;border:7px solid #83baff;border-radius:70% 25% 70% 25%;top:4px}
+.bow:before{left:-2px;transform:rotate(22deg)} .bow:after{right:-2px;transform:scaleX(-1) rotate(22deg)} 
+.locked .gift{filter:drop-shadow(0 0 16px rgba(112,180,255,.18))}
+.btn{border:0;border-radius:999px;padding:13px 20px;margin-top:18px;background:linear-gradient(90deg,#ff8fbe,#78b8ff);color:#15131c;font-weight:700;font-size:14px;box-shadow:0 8px 25px rgba(255,145,195,.2)}
+.hidden{display:none!important}
+#unlocked{animation:appear .9s ease both} @keyframes appear{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.intro{font-size:13px;opacity:.65;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+.big{font-size:35px;line-height:1.08;margin:0 0 24px;background:linear-gradient(90deg,#ffd5e8,#fff,#b9dbff);-webkit-background-clip:text;color:transparent}
+.message-card{text-align:left;background:linear-gradient(145deg,rgba(255,247,252,.98),rgba(235,246,255,.96));color:#342b38;border-radius:24px;padding:25px 22px;box-shadow:0 22px 65px rgba(0,0,0,.3);position:relative;overflow:hidden}
+.message-card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 90% 0,rgba(111,177,255,.25),transparent 30%),radial-gradient(circle at 0 100%,rgba(255,146,197,.25),transparent 32%);pointer-events:none}
+.message{position:relative;font-size:16px;line-height:1.62;white-space:pre-wrap;opacity:0;animation:cardtext 2.2s ease .8s forwards}
+@keyframes cardtext{to{opacity:1}}
+.end{font-size:25px;margin-top:24px;font-weight:700;background:linear-gradient(90deg,#ffb1d1,#b7d9ff);-webkit-background-clip:text;color:transparent}
+.hearts{position:fixed;inset:0;pointer-events:none;z-index:3;overflow:hidden}
+.heart{position:absolute;font-size:18px;animation:rise 5s linear forwards;opacity:0}
+@keyframes rise{0%{transform:translateY(30px) scale(.7);opacity:0}15%{opacity:.85}100%{transform:translateY(-100vh) rotate(25deg);opacity:0}}
+.note{margin-top:13px;font-size:11px;opacity:.48}
+
+.gift.active{animation:giftFloat .9s ease-in-out infinite}
+@keyframes giftFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-10px) rotate(-2deg)}}
+.gift.opening .lid{animation:lidOpen 1.25s cubic-bezier(.2,.8,.2,1) forwards}
+.gift.opening .box{animation:boxPop .9s ease-out forwards}
+.gift.opening .bow{animation:bowPop .7s ease-out forwards}
+@keyframes lidOpen{0%{transform:translateY(0) rotate(0);opacity:1}45%{transform:translateY(-22px) rotate(-5deg)}100%{transform:translateY(-72px) rotate(-13deg);opacity:0}}
+@keyframes boxPop{0%{transform:scale(1)}55%{transform:scale(1.07)}100%{transform:scale(.98)}}
+@keyframes bowPop{0%{transform:translateY(0)}100%{transform:translateY(-45px) scale(1.15);opacity:0}}
+.burst{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:8}
+.spark{position:absolute;font-size:20px;opacity:0}
+.spark.go{animation:spark 1.6s ease-out forwards}
+@keyframes spark{0%{transform:translate(0,0) scale(.3);opacity:0}15%{opacity:1}100%{transform:translate(var(--x),var(--y)) scale(1.2);opacity:0}}
+#count.pulse{animation:pulse .75s ease}
+@keyframes pulse{50%{transform:scale(1.25);text-shadow:0 0 25px rgba(255,170,215,.8)}}
+.big{animation:bigIn 1.2s cubic-bezier(.2,.8,.2,1) both}
+@keyframes bigIn{from{opacity:0;transform:scale(.65) translateY(25px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="stars"></div><div class="hearts" id="hearts"></div>
+<div class="shell">
+<section id="locked" class="card locked">
+<div class="gift-wrap"><div class="gift">
+<div class="bow"></div><div class="lid"></div><div class="box"></div><div class="ribbon-v"></div><div class="ribbon-h"></div>
+<div class="burst" id="burst"></div></div></div>
+<div class="sub" id="stageText">something special is waiting for you ♡</div>
+<div class="locktext" id="instruction">wait for it... ✨</div>
+<div class="count" id="count">5</div>
+<div class="locktext" id="smallText">something special is about to happen</div>
+</section>
+
+<section id="unlocked" class="hidden">
+<div class="intro">a little something for you</div>
+<h1 class="big">HAPPY BIRTHDAY<br>AANYA ♡</h1>
+<div class="message-card">
+<div class="message">heyyyyy aanyaaaa myloveeeee happyyyy birtthdayyyyyyy, i loveeee uuuuuu sosososooooo muchhhhhh. thankkuuuu sooooo much for everythingggg. im soooo happy i got u in my lifeeee and especially today is even happier coz its ur bdayyy. ur honestly the most niceee, beautifullll, hotttttt and cuteeeeee girllll. you light up my day everytime i get a text from u and when i get photos i lit start celebrating. u lit make me the happiest guy everrrrr, thankkuuuu sososoooo muchhhhh. ur lit the perfect personnnn for me ur everything that i ever wanteddddd. i hope we get tgt one day and live the rest of our lives togetherrrr. iloveeeuuuuu more than ull everrr knowwww. i hope you liked this small gift hehehe, cant wait to talk properly tmr.</div>
+</div>
+<div class="end">I love you ♡</div>
+<div class="note">made just for you</div>
+</section>
+</div></div>
+
+<audio id="music" src="happy_fun_piano.wav" loop preload="auto"></audio>
+<script>
+const locked=document.getElementById("locked");
+const unlocked=document.getElementById("unlocked");
+const count=document.getElementById("count");
+const stageText=document.getElementById("stageText");
+const instruction=document.getElementById("instruction");
+const smallText=document.getElementById("smallText");
+const music=document.getElementById("music");
+const gift=document.querySelector(".gift");
+const burst=document.getElementById("burst");
+let opened=false;
+
+function sparkleBurst(){
+  const symbols=["✦","✧","♡","✿","•"];
+  for(let i=0;i<22;i++){
+    const s=document.createElement("span"); s.className="spark";
+    s.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    s.style.setProperty("--x",(Math.random()*260-130)+"px");
+    s.style.setProperty("--y",(Math.random()*210-105)+"px");
+    s.style.transform="translate(0,0)";
+    burst.appendChild(s);
+    requestAnimationFrame(()=>s.classList.add("go"));
+    setTimeout(()=>s.remove(),1800);
+  }
+}
+function openGift(){
+  if(opened)return; opened=true;
+  instruction.textContent="here it comes... 💗";
+  stageText.textContent="for the birthday girl ♡";
+  gift.classList.add("opening");
+  sparkleBurst();
+  music.volume=.34;
+  music.play().catch(()=>{});
+  setTimeout(()=>{
+    locked.classList.add("hidden");
+    unlocked.classList.remove("hidden");
+    document.title="Happy Birthday Aanya ♡";
+    setInterval(makeHeart,600);
+  },1500);
+}
+function makeHeart(){
+  const h=document.createElement("div"); h.className="heart";
+  h.textContent=Math.random()>.45?"♡":"✦";
+  h.style.left=(Math.random()*100)+"%"; h.style.bottom="-20px";
+  h.style.animationDuration=(4+Math.random()*3)+"s";
+  document.getElementById("hearts").appendChild(h);
+  setTimeout(()=>h.remove(),8000);
+}
+let n=5;
+setTimeout(()=>{
+  stageText.textContent="okay... get ready ♡";
+  instruction.textContent="opening in...";
+  smallText.textContent="5... 4... 3... 2... 1...";
+  count.textContent="5";
+  const timer=setInterval(()=>{
+    n--;
+    count.textContent=n;
+    count.classList.remove("pulse"); void count.offsetWidth; count.classList.add("pulse");
+    if(n<=0){clearInterval(timer);count.textContent="♡";openGift();}
+  },1000);
+},5000);
+</script>
+</body>
+</html>
